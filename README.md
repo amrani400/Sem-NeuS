@@ -44,7 +44,7 @@ Your directory tree should look like this:
 ```
 Sem-NeuS/
 └── data/
-    └── insect_01/          <-- Use this name for --case
+    └── insect_dataset/          <-- Use this name for --case
         ├── image/
         ├── mask/
         └── cameras_sphere.npz
