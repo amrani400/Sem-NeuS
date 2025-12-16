@@ -79,7 +79,7 @@ data/
     ├── cameras_sphere.npz   # Camera parameters (NeuS format)
     └── dinov3_features/     # (Auto-generated )
 ```
-🚀 Usage
+## 🚀 Usage
 ### 1. Training
 To train a scene, run exp_runner_high.py. The script will automatically extract DINO features if they don't exist.
 ```
