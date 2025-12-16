@@ -17,13 +17,13 @@ This repository contains the official implementation of **Sem-NeuS**, a framewor
 git clone https://github.com/yourusername/Sem-NeuS.git
 cd Sem-NeuS
 ```
-2. Environment Setup
+### 2. Environment Setup
 We recommend using Anaconda to manage dependencies.
 ```bash
 conda create -n semneus python=3.9
 conda activate semneus
 ```
-3. Install Dependencies
+### 3. Install Dependencies
 Install the required Python packages:
 ```
 pip install -r requirements.txt
@@ -58,7 +58,7 @@ data/
     └── dinov3_features/     # (Auto-generated )
 ```
 🚀 Usage
-1. Training
+# 1. Training
 To train a scene, run exp_runner_high.py. The script will automatically extract DINO features if they don't exist.
 ```
 python exp_runner.py \
@@ -68,7 +68,7 @@ python exp_runner.py \
 ```
 --case: The name of your scene folder inside data/ (e.g., china_statue, insect_01).
 --conf: Configuration file path.
-2. Mesh Extraction (Validation)
+# 2. Mesh Extraction (Validation)
 To extract the mesh from a trained model using Marching Cubes:
 ```
 python exp_runner.py \
@@ -79,7 +79,7 @@ python exp_runner.py \
     --mesh_resolution 1024
 ```
 The output mesh will be saved in exp/<CASE_NAME>/meshes/.
-3. Novel View Synthesis
+# 3. Novel View Synthesis
 To render novel views (interpolation) between two cameras:
 ```
 python exp_runner.py \
