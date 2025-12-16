@@ -28,6 +28,28 @@ Install the required Python packages:
 ```
 pip install -r requirements.txt
 ```
+
+## 🐜 Dataset Download
+
+We release the high-resolution **Entomological Dataset** presented in the paper, featuring challenging thin structures and glossy surfaces (e.g., *Oechalia cf. schellenbergi*). The data includes calibrated cameras (COLMAP) and segmentation masks (SAM).
+
+| Dataset | Description | Download |
+| :--- | :--- | :--- |
+| **Insect-01** | *Oechalia cf. schellenbergi* (211 views) | [**Download (.zip)**](INSERT_YOUR_LINK_HERE) |
+| **OmniObject3D** | Selected scenes (Statue, Lego, Bread) | [Official Website](https://omniobject3d.github.io/) |
+
+### How to use
+Your directory tree should look like this:
+
+```
+Sem-NeuS/
+└── data/
+    └── insect_01/          <-- Use this name for --case
+        ├── image/
+        ├── mask/
+        └── cameras_sphere.npz
+```
+
 🦕 DINOv3 Model Setup
 Our framework relies on a pre-trained DINOv3 model (ViT-L/16) to provide semantic guidance. You must download the weights before training.
 Download the weights:
