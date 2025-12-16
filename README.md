@@ -31,11 +31,11 @@ pip install -r requirements.txt
 
 ## 🐜 Dataset Download
 
-We release the high-resolution **Entomological Dataset** presented in the paper, featuring challenging thin structures and glossy surfaces (e.g., *Oechalia cf. schellenbergi*). The data includes calibrated cameras (COLMAP) and segmentation masks (SAM).
+The insect data includes calibrated cameras (COLMAP) and segmentation masks (SAM).
 
 | Dataset | Description | Download |
 | :--- | :--- | :--- |
-| **Insect-01** | *Oechalia cf. schellenbergi* (211 views) | [**Download (.zip)**](INSERT_YOUR_LINK_HERE) |
+| **Insect-dataset** | *Oechalia cf. schellenbergi* (211 views) | [**Download (.zip)**]([INSERT_YOUR_LINK_HERE](https://drive.google.com/file/d/1QkLr9OU5NzqOv8t92-HjJTL6OKAbm9xg/view?usp=sharing)) |
 | **OmniObject3D** | Selected scenes (Statue, Lego, Bread) | [Official Website](https://omniobject3d.github.io/) |
 
 ### How to use
