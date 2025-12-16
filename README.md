@@ -7,7 +7,7 @@
 This repository contains the official implementation of **Sem-NeuS**, a framework for high-fidelity 3D reconstruction that integrates **Semantic-Guided Geometry Distillation** with a hierarchical SDF architecture. By distilling features from Vision Foundation Models (DINOv3) into 3D geometry, our method resolves ambiguities in textureless and thin structures (e.g., insect limbs) without using semantic features as direct input.
 
 <p align="center">
-  <img src="assets/fig_1" alt="Sem-NeuS Teaser" width="100%">
+  <img src="assets/fig_1.png" alt="Sem-NeuS Teaser" width="100%">
 </p>
 
 ## 🛠️ Installation
