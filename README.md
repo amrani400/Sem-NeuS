@@ -81,7 +81,6 @@ python exp_runner.py \
 The output mesh will be saved in exp/<CASE_NAME>/meshes/.
 ### 3. Novel View Synthesis
 To render novel views (interpolation) between two cameras:
-```
 python exp_runner.py \
     --mode interpolate_0_10 \
 ```
