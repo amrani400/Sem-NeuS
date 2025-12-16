@@ -1,18 +1,19 @@
-# Sem-NeuS
-Sem-NeuS: Semantically-Guided High-Fidelity Neural Surface Reconstruction via Geometry Distillation
-![alt text](https://img.shields.io/badge/License-MIT-yellow.svg)
+# Sem-NeuS: Semantically-Guided High-Fidelity Neural Surface Reconstruction
 
-![alt text](https://img.shields.io/badge/Framework-PyTorch-orange.svg)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Framework: PyTorch](https://img.shields.io/badge/Framework-PyTorch-orange.svg)](https://pytorch.org/)
+[![Conference: ICPR 2026](https://img.shields.io/badge/Conference-ICPR_2026-blue.svg)](https://icpr2026.org/)
 
-![alt text](https://img.shields.io/badge/Conference-ICPR_2026-blue.svg)
-This repository contains the official implementation of Sem-NeuS, a framework for high-fidelity 3D reconstruction that integrates Semantic-Guided Geometry Distillation with a hierarchical SDF architecture. By distilling features from Vision Foundation Models (DINOv3) into 3D geometry, our method resolves ambiguities in textureless and thin structures (e.g., insect limbs) without using semantic features as direct input.
+This repository contains the official implementation of **Sem-NeuS**, a framework for high-fidelity 3D reconstruction that integrates **Semantic-Guided Geometry Distillation** with a hierarchical SDF architecture. By distilling features from Vision Foundation Models (DINOv3) into 3D geometry, our method resolves ambiguities in textureless and thin structures (e.g., insect limbs) without using semantic features as direct input.
+
 <p align="center">
-<img src="assets/teaser_final_polished.png" alt="Sem-NeuS Teaser" width="100%">
+  <img src="assets/teaser_final_polished.png" alt="Sem-NeuS Teaser" width="100%">
 </p>
-🛠️ Installation
-1. Clone the repository
-code
-Bash
+
+## 🛠️ Installation
+
+### 1. Clone the repository
+```bash
 git clone https://github.com/yourusername/Sem-NeuS.git
 cd Sem-NeuS
 2. Environment Setup
@@ -22,7 +23,7 @@ Bash
 conda create -n semneus python=3.9
 conda activate semneus
 3. Install Dependencies
-Install the required Python packages listed in requirements.txt:
+Install the required Python packages:
 code
 Bash
 pip install -r requirements.txt
@@ -30,19 +31,20 @@ pip install -r requirements.txt
 Our framework relies on a pre-trained DINOv3 model (ViT-L/16) to provide semantic guidance. You must download the weights before training.
 Download the weights:
 Download the dinov3_vitl16.pth checkpoint.
-(Note: If using the official Facebook Research release, ensure the filename matches).
 code
 Bash
-# Example (Update URL if hosting your own weight file)
+# Example (Update URL if hosting your own weight file, or download manually)
 wget https://dl.fbaipublicfiles.com/dinov3/dinov3_vitl16.pth
 Place the file:
-Move the .pth file to the root directory of this repository:
+Move the .pth file to the root directory of this repository. Your folder structure should look like this:
 code
-Code
+Text
 Sem-NeuS/
-├── dinov3_vitl16.pth  <-- Place here
+├── dinov3_vitl16.pth        <-- Place here
 ├── exp_runner_high.py
 ├── models/
+│   ├── semantic/
+│   └── ...
 └── ...
 Note: You do not need to manually extract features. The training script automatically detects if features are missing for a dataset and runs the extractor (models/semantic/preprocess.py) before training starts.
 📂 Data Preparation
@@ -78,7 +80,7 @@ python exp_runner_high.py \
     --mesh_resolution 1024
 The output mesh will be saved in exp/<CASE_NAME>/meshes/.
 3. Novel View Synthesis
-To render novel views (interpolation):
+To render novel views (interpolation) between two cameras:
 code
 Bash
 python exp_runner_high.py \
