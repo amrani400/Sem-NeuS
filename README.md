@@ -32,8 +32,6 @@ pip install -r requirements.txt
 Our framework relies on a pre-trained DINOv3 model (ViT-L/16) to provide semantic guidance. You must download the weights before training.
 Download the weights:
 Download the dinov3_vitl16.pth checkpoint.
-
-# Example (Update URL if hosting your own weight file, or download manually)
 ```
 wget https://dl.fbaipublicfiles.com/dinov3/dinov3_vitl16.pth
 ```
