@@ -35,7 +35,7 @@ The insect data includes calibrated cameras (COLMAP) and segmentation masks (SAM
 
 | Dataset | Description | Download |
 | :--- | :--- | :--- |
-| **Insect-dataset** | *Oechalia cf. schellenbergi* (211 views) | [**Download (.zip)**]([[INSERT_YOUR_LINK_HERE](https://drive.google.com/file/d/1QkLr9OU5NzqOv8t92-HjJTL6OKAbm9xg/view?usp=sharing)]) |
+| **Insect-dataset** | *Oechalia cf. schellenbergi* (211 views) | [**Download (.zip)**](https://drive.google.com/file/d/1QkLr9OU5NzqOv8t92-HjJTL6OKAbm9xg/view?usp=sharing) |
 | **OmniObject3D** | Selected scenes (Statue, Lego, Bread) | [Official Website](https://omniobject3d.github.io/) |
 
 ### How to use
