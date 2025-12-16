@@ -51,8 +51,9 @@ Sem-NeuS/
 ```
 
 ## 🦕 DINOv3 Model Setup
-Our framework relies on a pre-trained DINOv3 model (ViT-L/16) to provide semantic guidance. You must download the weights before training.
-Download the weights:
+Our framework relies on a pre-trained DINOv3 model (ViT-L/16) to provide semantic guidance. 
+You must download the weights before training.
+### Download the weights:
 Download the dinov3_vitl16.pth checkpoint.
 ```
 wget https://dl.fbaipublicfiles.com/dinov3/dinov3_vitl16.pth
