@@ -19,10 +19,10 @@ cd Sem-NeuS
 ```
 2. Environment Setup
 We recommend using Anaconda to manage dependencies.
-code
-Bash
+```bash
 conda create -n semneus python=3.9
 conda activate semneus
+```
 3. Install Dependencies
 Install the required Python packages:
 code
