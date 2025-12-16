@@ -16,6 +16,7 @@ This repository contains the official implementation of **Sem-NeuS**, a framewor
 ```bash
 git clone https://github.com/yourusername/Sem-NeuS.git
 cd Sem-NeuS
+```
 2. Environment Setup
 We recommend using Anaconda to manage dependencies.
 code
