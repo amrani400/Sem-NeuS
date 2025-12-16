@@ -69,7 +69,7 @@ Sem-NeuS/
 └── ...
 ```
 Note: You do not need to manually extract features. The training script automatically detects if features are missing for a dataset and runs the extractor (models/semantic/preprocess.py) before training starts.
-📂 Data Preparation
+### 📂 Data Preparation
 Organize your data following the standard NeuS format. For custom datasets (e.g., insects), use COLMAP to generate camera poses.
 ```
 data/
@@ -81,7 +81,7 @@ data/
 ```
 ## 🚀 Usage
 ### 1. Training
-To train a scene, run exp_runner_high.py. The script will automatically extract DINO features if they don't exist.
+To train a scene, run exp_runner.py. The script will automatically extract DINO features if they don't exist.
 ```
 python exp_runner.py \
     --mode train \
